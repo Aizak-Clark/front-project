@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
-  base: '/frontend-project/',
+  base: '/front-project/',
   server: {
     host: '0.0.0.0', // Доступен извне для Live Share
     port: 5173,
