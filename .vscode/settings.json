@@ -1,0 +1,48 @@
+{
+  // === Основное ===
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // === Для CSS ===
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+
+  // === Для HTML ===
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  // === Для JS ===
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // === Для файлов, которые не нужно трогать ===
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+
+  // === Подключаем линтеры ===
+  "stylelint.validate": ["css"],
+  "eslint.validate": ["javascript", "html"],
+
+  // === Prettier ===
+  "prettier.requireConfig": true,
+  "prettier.enable": true,
+
+  // === Прочее ===
+  "editor.tabSize": 2,
+  "files.eol": "\n"
+}

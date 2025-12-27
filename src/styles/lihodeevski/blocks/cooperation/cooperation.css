@@ -1,0 +1,31 @@
+.cooperation {
+  padding-top: 100px;
+}
+
+.cooperation__content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.cooperation__content-image {
+  flex: 1 1 clamp(120px, 18vw, 200px);
+  height: 134px;
+  min-width: 0;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+@media (width <= 768px) {
+  .cooperation__content {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .cooperation__content-image {
+    flex: 1 1 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    height: 134px;
+  }
+}
